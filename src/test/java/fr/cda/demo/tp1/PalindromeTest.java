@@ -14,7 +14,7 @@ class PalindromeTest {
     private Palindrome palindrome;
 
     /**
-     * Avant chaque test, on instancie l'objet Moyenne
+     * Avant chaque test, on instancie l'objet Palindrome
      */
     @BeforeEach
     public void setUp() {
