@@ -29,4 +29,8 @@ public class Salaire {
     public void setTauxHoraire(float tauxHoraire) {
         this.tauxHoraire = tauxHoraire;
     }
+
+    public float getSalaire() {
+        return this.tauxHoraire;
+    }
 }
