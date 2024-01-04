@@ -2,9 +2,9 @@ package fr.cda.demo.tp2;
 
 
 public class Identite {
-    private String nom;
-    private String prenom;
-    private Adresse adresse;
+    public String nom;
+    public String prenom;
+    public Adresse adresse;
 
     public Identite(String nom, String prenom, String voie, String rue, String cp, String ville, String pays) {
         this.nom = nom;
