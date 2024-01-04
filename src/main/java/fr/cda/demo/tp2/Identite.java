@@ -35,4 +35,8 @@ public class Identite {
     public void setAdresse(Adresse adresse) {
         this.adresse = adresse;
     }
+
+    public String getIdentite() {
+        return this.nom + " " + this.prenom + " " + this.adresse;
+    }
 }
