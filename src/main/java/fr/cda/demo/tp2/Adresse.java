@@ -1,11 +1,11 @@
 package fr.cda.demo.tp2;
 
 public class Adresse {
-    private String voie;
-    private String rue;
-    private String cp;
-    private String ville;
-    private String pays;
+    public String voie;
+    public String rue;
+    public String cp;
+    public String ville;
+    public String pays;
 
     public Adresse(String voie, String rue, String cp, String ville, String pays) {
         this.voie = voie;
