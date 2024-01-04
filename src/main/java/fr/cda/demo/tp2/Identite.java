@@ -6,10 +6,10 @@ public class Identite {
     public String prenom;
     public Adresse adresse;
 
-    public Identite(String nom, String prenom, String voie, String rue, String cp, String ville, String pays) {
+    public Identite(String nom, String prenom, Adresse adresse) {
         this.nom = nom;
         this.prenom = prenom;
-        this.adresse = new Adresse(voie, rue, cp, ville, pays);
+        this.adresse = adresse;
     }
 
     public String getNom() {
