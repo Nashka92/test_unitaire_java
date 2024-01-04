@@ -54,4 +54,8 @@ public class Adresse {
     public void setPays(String pays) {
         this.pays = pays;
     }
+
+    public String getAdresse() {
+        return this.voie + " " + this.rue + " " + this.cp + " " + this.ville + " " + this.pays;
+    }
 }
