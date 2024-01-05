@@ -1,5 +1,9 @@
 package fr.cda.demo.tp2;
 
+/**
+ * Classe Adresse qui a pour seul intérêt de stocker les données
+ * Aucunes méthodes implanter, Pour les test unitaire, il sera mocked
+ */
 public class Adresse {
     public String voie;
     public String rue;
