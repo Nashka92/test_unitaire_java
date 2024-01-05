@@ -12,6 +12,10 @@ class SalaireTest {
 
     private Salaire salaire;
 
+    /**@BeforEach
+     * On prépare l'environnement de test
+     * On instancie l'objet salaire avant l'éxecution de chaque test
+     */
     @BeforeEach
     public void setUp() {
 
@@ -19,7 +23,7 @@ class SalaireTest {
     }
 
     /**
-     * Calcul du salaire avec horaires standard et avec un fichier CSV source
+     * Calcul du salaire avec horaires normal (sans sup) et avec un fichier CSV source
      */
     @ParameterizedTest
     @CsvSource({
