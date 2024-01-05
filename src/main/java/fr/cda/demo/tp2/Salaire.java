@@ -7,6 +7,10 @@ public class Salaire {
         this.tauxHoraire = tauxHoraire;
     }
 
+    /**
+     * @param heures
+     * @return Calcul Salaire normal + Calcul salaire Supplementaire
+     */
     public double payer(int heures) {
         double heuresNormales = Math.min(heures, 151.67);
         double heuresSupplementaires = Math.max(0, heures - 151.67);
@@ -14,10 +18,18 @@ public class Salaire {
         return calculerSalaireNormal(heuresNormales) + calculerSalaireSupplementaire(heuresSupplementaires);
     }
 
+    /**
+     * @param heures
+     * @return le taux horaire x les heures
+     */
     private double calculerSalaireNormal(double heures) {
         return tauxHoraire * heures;
     }
 
+    /**
+     * @param heures
+     * @return les heures x le taux horaire avec les 25%
+     */
     private double calculerSalaireSupplementaire(double heures) {
         return heures * tauxHoraire * 1.25;
     }
