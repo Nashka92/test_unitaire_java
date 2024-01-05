@@ -16,16 +16,13 @@ public abstract class Salarie {
     public void travailler(int heures) {
         double salaireRecu = this.salaire.payer(heures);
         System.out.println("Le salarié " + this.identite.getNom() + " " + this.identite.getPrenom()
-                            + " a travaillé " + heures + " heures et a perçu " + salaireRecu + " €");
+                + " a travaillé " + heures + " heures et a perçu " + salaireRecu + " €");
     }
 
     public void demenager(Adresse nouvelleAdresse) {
         this.identite.setAdresse(nouvelleAdresse);
     }
 
-    public void travailler() {
-        travailler(151);
-    }
 
     /**
      * Méthode pour augmenter le salaire du salarié
