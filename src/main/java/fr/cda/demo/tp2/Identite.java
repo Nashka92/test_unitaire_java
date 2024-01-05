@@ -1,6 +1,9 @@
 package fr.cda.demo.tp2;
 
-
+/**
+ * Classe Identite qui a pour but de stocker des données, pas de méthodes.
+ * Aucunes méthodes implanter, Pour les test unitaire, il sera mocked
+ */
 public class Identite {
     public String nom;
     public String prenom;
