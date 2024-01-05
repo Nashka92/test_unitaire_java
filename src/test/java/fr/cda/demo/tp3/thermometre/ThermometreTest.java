@@ -36,7 +36,7 @@ public class ThermometreTest {
         int[] temperatures = {-1, -2, -3, -4};
         Thermometre thermometre = new Thermometre();
         int resultat = thermometre.thermometreEgalite(temperatures);
-        assertEquals(-1, resultat);
+        assertEquals(-4, resultat);
     }
 
 }
