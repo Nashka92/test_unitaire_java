@@ -24,11 +24,19 @@ public class ThermometreTest {
      * On retourne le plus petit du tableau
      */
     @Test
-    public void thermometre_egalite_Positive_retourne_4(){
+    public void thermometre_egalite_positive_retourne_4(){
         int[] temperatures = {4, 5, 6, 7};
         Thermometre thermometre = new Thermometre();
         int resultat = thermometre.thermometreEgalite(temperatures);
         assertEquals(4, resultat);
+    }
+
+    @Test
+    public void thermometre_egalite_negatif(){
+        int[] temperatures = {-1, -2, -3, -4};
+        Thermometre thermometre = new Thermometre();
+        int resultat = thermometre.thermometreEgalite(temperatures);
+        assertEquals(-1, resultat);
     }
 
 }
