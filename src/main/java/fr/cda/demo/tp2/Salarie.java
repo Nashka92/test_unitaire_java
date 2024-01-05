@@ -19,6 +19,9 @@ public abstract class Salarie {
                 + " a travaillé " + heures + " heures et a perçu " + salaireRecu + " €");
     }
 
+    /**
+     * Méthode void demenager et nouvelle adresse
+     */
     public void demenager(Adresse nouvelleAdresse) {
         this.identite.setAdresse(nouvelleAdresse);
     }
